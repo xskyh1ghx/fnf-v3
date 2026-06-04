@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FNF Remake (Chromebook)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>FNF-Style Rhythm Game</h1>
+
+  <div id="ui">
+    <div id="score">Score: 0</div>
+    <div id="health-bar">
+      <div id="health-fill"></div>
+    </div>
+  </div>
+
+  <div id="game">
+    <div id="lanes">
+      <div class="lane" data-key="ArrowLeft">←</div>
+      <div class="lane" data-key="ArrowUp">↑</div>
+      <div class="lane" data-key="ArrowDown">↓</div>
+      <div class="lane" data-key="ArrowRight">→</div>
+    </div>
+    <div id="notes"></div>
+    <div id="hit-line"></div>
+  </div>
+
+  <p>Press the matching arrow keys in time with the notes.</p>
+  <button id="start-btn">Start Song</button>
+
+  <!-- Add your own song file named song.mp3 in the repo -->
+  <audio id="song" src="song.mp3"></audio>
+
+  <script src="game.js"></script>
+</body>
+</html>
